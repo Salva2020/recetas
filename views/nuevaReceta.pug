@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title Nueva receta
+	body
+		p #{mensaje}
+		form(id="nuevaRecetaForm" action="/eliminaReceta/eliminar" method="post")
+			p
+				label(for="nombreReceta") Nombre:
+				input(id="nombreReceta" type ="text" name="nombre")
+			p
+				label(for="descReceta") Receta:
+				input(id="descReceta" type ="text" name="descripcion")
+			p
+				input(type="submit" value="Publicar")

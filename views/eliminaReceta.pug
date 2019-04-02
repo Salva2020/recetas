@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title Elimina receta
+	body
+		p #{mensaje}
+		form(id="nuevaRecetaForm" action="/eliminaReceta/eliminar" method="post")
+			p
+				label(for="nombreRecetaEliminar") Elimina recetas que incluyan el siguiente texto:
+			p
+				input(id="nombreRecetaEliminar" type ="text" name="nombre")
+			p
+				input(type="submit" value="Eliminar")
+				input(type="hidden" name="metodo" value="delete")

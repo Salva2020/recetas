@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title Recetario
+	body
+		if registros
+			each registro in registros
+				h2 #{registro.nombre}
+				p #{registro.descripcion}
+				p #{registro.fecha_publicacion}
